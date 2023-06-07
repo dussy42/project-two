@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice games</title>
+    <link rel="stylesheet" type="text/css" href="/assets/game.css">
+</head>
+<body>
+    <div class="links">
+        <a href="" target="_blank" alt="home- button">Home</a>
+        <button onclick="rule()"> Rules</button>
+    </div>
+    <ul>
+     <p></p>
+     <p></p>
+     <p></p>
+     <p></p>
+    </ul>
+    
+    <div class="main">
+        <h1>Dice Game</h1>
+        <a href="dice.html" target="_blank" alt="Start-Game">Start Game</a>
+        
+    </div>
+
+    <script>
+        function rule(){
+           var ul=document.getElementsByTagName("ul");
+           /*
+           document.getElementsByTagName("ul").setAttribute("class","tas");
+           ul.setAttribute("class","tabs"); */
+           
+           var listItems=document.getElementsByTagName("p")
+           ul.innerText="Game Rules";
+           listItems[0].innerText="Click the start game button";
+           listItems[1].innerText="A score will be rendered onscreen";
+           listItems[2].innerText="Press Hold button to push your score to the score button";
+           listItems[3].innerText="While on hold, the second Player could do the same as in 1 and two";
+           
+        }
+       
+
+
+
+       /* const ages=document.getElementsByTagName("p");
+        for (const age of ages){
+        age.addEventListener("click", (event) => {
+           event.target.remove();
+            pag.classList.toggle("large");
+        }
+        );
+    }
+        */
+
+   
+
+    </script>
+    
+</body>
+</html>
