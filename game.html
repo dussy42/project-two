@@ -8,23 +8,48 @@
     <link rel="stylesheet" type="text/css" href="/assets/game.css">
 </head>
 <body>
-    <div class="links">
-        <a href="" target="_blank" alt="home- button">Home</a>
-        <button onclick="rule()"> Rules</button>
-
-    </div>
-    <ul>
-     <p></p>
-     <p></p>
-     <p></p>
-     <p></p>
-    </ul>
-    
-    <div class="main">
-        <h1>Dice Game</h1>
-        <a href="dice.html" target="_blank" alt="Start-Game">Start Game</a>
+    <div class="wrapper">
+        <div class="links">
+            <a href="" target="_blank" alt="home- button">Home</a>
+            <button id="toggleBtn"  value="ON" onclick="rule()"> Rules</button>
+        </div>
+        <ul >
+         <p></p>
+         <p></p>
+         <p></p>
+         <p></p>
+        </ul>
         
+        <div class="main">
+
+            <h1>Comptia A+ 220-1001 Certification Questions Answers</h1>
+            <img src="asset/images/comptia-a-220-1001-exam-answer.webp" alt="comptia logo">
+    
     </div>
+
+    <section>
+        <audio src="/asset/wizkid.m4a" controls muted loop></audio>
+        <div  class="details">
+            <input for="text" id="myname" value="Enter username" >
+            <input type="submit" id="submit" placeholder="submit" onclick="inpt()">
+
+        </div>
+           <h2 id="nameEl"></h2>
+
+        <div class="question">
+            <p> 1. Which of the following has a P4 connector to provide a 12V output?</p>
+            <uL>
+                <li id="first">SCSI cable</li>
+                <li id="second">24-pin adapter</li>
+                <li id="third">eSATA cable</li>
+                <li id="fourth">EIDE port</li>
+            </uL>
+            <button onclick="rev()" >Reveal Answer</button>
+            <span id="pan"></span>
+
+        </div>
+    </section>
+</body>
 
     <script src="game.js"></script>
     
