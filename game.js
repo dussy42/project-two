@@ -163,3 +163,55 @@ function showAns(){
     document.getElementById("wireless").textContent="NFC";
     document.getElementById("wireless").style.backgroundColor="white";
 };
+
+
+/*third question*/
+var bottles=document.getElementsByClassName("optn");
+for( let bottle of bottles){
+bottle.addEventListener("click", function myCon(){
+var perfectAns=document.getElementById("one");
+var result=perfectAns;
+ 
+for( let option of bottles){
+    option.style.pointerEvents="none";
+}
+ if(result===questThree2){
+    displayPort()
+
+ }
+else if(result===questThree3){
+    dvi()
+ }
+ else if(result===questThree4){
+    hdmi()
+ }
+ else{
+  perfectAns.innerHTML="Thunderbolt" + " correct answer"
+  perfectAns.style.backgroundColor="white";
+ }
+});
+}
+
+/* declaring option two in question 3 if clicked */
+var questThree2=document.getElementById("two");
+questThree2.addEventListener("click", function displayPort(){
+    questThree2.style.backgroundColor="goldenrod"
+});
+
+/* declaring option three in question 3 if clicked */
+var questThree3=document.getElementById("three");
+questThree3.addEventListener("click", function dvi(){
+    questThree3.style.backgroundColor="goldenrod"
+});
+
+/* declaring option four in question 3 if clicked */
+var questThree4=document.getElementById("four");
+questThree4.addEventListener("click", function hdmi(){
+    questThree4.style.backgroundColor="goldenrod"
+});
+
+/*revealing the answers for question3*/
+function showAnswer(){
+    document.getElementById("connection").textContent="Thunderbolt";
+    document.getElementById("connection").style.backgroundColor="white"
+}
