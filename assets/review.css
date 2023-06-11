@@ -1,0 +1,50 @@
+body{
+    background-image: url(/assets/images/nice.avif);
+    background-size: cover;
+   
+    
+  
+}
+
+main{
+    width: 100%;
+}
+
+
+
+.main{
+    height: 80vh;
+    width: 50%;
+    margin-top: 170px;
+    border-radius: 9px;
+    margin-left: 300px;
+    margin-right: 250px;
+    padding-right: 50px;
+    padding-left: 100px;
+    background-image: linear-gradient(to top left, rgba(217, 159, 159, 0.6) 0%, rgba(81, 88, 133, 0.9) 100%);
+}
+.main h1{
+    padding-top: 22px;
+}
+
+.main img{
+    align-self: center;
+    width: 80%;
+    height: 44vh;
+    /*
+    margin-top: 68px;
+    width: 80%;
+    height: 44vh;
+    margin-left: 50px; */
+}
+
+button{
+    height: 4vh;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 9px;
+    margin-top: 20px;
+    margin-left: 650px;
+    background-image: linear-gradient(to top left, rgba(217, 159, 159, 0.6) 0%, rgba(81, 88, 133, 0.9) 100%);;
+}
