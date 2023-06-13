@@ -1,14 +1,17 @@
 # project-two
 The comptia a+ review quiz is based on real comptia a+ exam questions and i particularly choose this because of my past experience in preparing for the comptia exam. However, potential user will have a feel of what real exam situation feels like, more like an exam simulation practise.
-![Screenshot1440px](documentation/Screenshot201440px.png)
-![Screenshot768px](documentation/Screenshot20768px.png)
-![Screenshot425px](documentation/Screenshot20425px.png)
+![home1440px](documentation/home1440px.png)
+![home768px](documentation/home768px.png)
+![home425px](documentation/home425px.png)
+![Screenshot1440px](documentation/Screenshot1440px.png)
+![Screenshot768px](documentation/Screenshot768px.png)
+![Screenshot425px](documentation/Screenshot425px.png)
 
 # User Experience (UX)
 Key information for the site
-This section provides insight into the UX process, focusing on who the website is for, the main aims of the project and how the website can help users meet their needs.
+this section provides insight into the UX process, focusing on who the website is for, the main aims of the project and how the website can help users meet their needs.
 
-Project goals:<br>
+# Project goals:<br>
 
 To encourage people to take the quiz for them to prepare for the comptia A+ exam(real exam simulation).<br>
 To provide users with immediate feedback(upon clicking any option in any question, the background colors changes to red if its red and blue if the answer is right) . <br>
@@ -29,7 +32,7 @@ Upon clicking start review button on the Home Page which eventually opens the qu
 
 
 ## CREDITS <br>
-All the codes were mine with exception to the background images which i sourced from [Unsplash](https://unsplash.com/s/photos/full-screen-wallpaper) and [servicecentrelist](https://servicecentrelist.com/comptia-a-220-1001-certification-questions-answers)
+All the codes were mine , though the idea to create the review quiz was gotten from tutorial videos online. However, the background images were sourced from [Unsplash](https://unsplash.com/s/photos/full-screen-wallpaper) and [servicecentrelist](https://servicecentrelist.com/comptia-a-220-1001-certification-questions-answers)
 
 ** VALIDATOR TESTING**: <br>
 W3C was used to validate my html while jigsaw was used for css and also jshint for javascript and both turn out to be no error.Be that as it may, i affrirm  upon using lighthouse in devtools that the website is accessibile with legible fonts and well lighted colors
