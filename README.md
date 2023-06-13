@@ -35,6 +35,6 @@ All the codes were mine , though the idea to create the review quiz was gotten f
 ** VALIDATOR TESTING**: <br>
 W3C was used to validate my html while jigsaw was used for css and also jshint for javascript and both turn out to be no error.Be that as it may, i affrirm  upon using lighthouse in devtools that the website is accessibile with legible fonts and well lighted colors
 
- ![](asset/)
-  ![](asset/)
+ ![lighthouse](assets/images/perfomance.png)
+
  
