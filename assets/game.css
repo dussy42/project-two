@@ -15,6 +15,39 @@ body{
 #quiz-container{
     width: 100%;
 }
+
+.links{
+    justify-content: space-around;
+    margin-top: 55px;
+}
+
+   a{
+    justify-content: center;
+    margin-left: 30px;
+    padding: 16px;
+    background-color: bisque;
+    text-decoration: none;
+    border-radius: 2px;
+    
+
+   }
+
+   a:hover{
+    transition-duration: 4s;
+    color: #6B5B95;
+    background-color: brown;
+  
+   }
+
+  .links button{
+  
+    justify-content: center;
+    margin-left: 30px;
+    padding: 16px;
+    color: black;
+    background-color: bisque;
+    border-radius: 2px;
+}
 /*styling the inputfield */
 
 input{
@@ -96,7 +129,7 @@ h1{
     font-size: large;
     font-weight: bold;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom:10px;
     width:50%;
     height: 7vh;
     border-radius: 7px;
