@@ -1,81 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dice games</title>
-    <link rel="stylesheet" type="text/css" href="/assets/game.css">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" type="text/css" href="assets/game.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="links">
-            <a href="" target="_blank" alt="home- button">Home</a>
-            <button id="toggleBtn"  value="ON" onclick="rule()"> Rules</button>
-        </div>
-        <ul >
-         <p></p>
-         <p></p>
-         <p></p>
-         <p></p>
-        </ul>
-        
-        <div class="main">
-            <h1>Comptia A+ 220-1001 Certification Questions Answers</h1>
-            <img src="assets/images/comptia-a-220-1001-exam-answer.webp" alt="comptia logo">
-       </div>
-
-    <section>
-        <audio src="/assets/wizkid.m4a" controls muted loop></audio>
+  <div id="quiz-container">
+    <button id="toggleBtn"  value="ON" onclick="rule()"> Rules</button>
+    <ul ></ul>
+    
+    <audio src="/assets/wizkid.m4a" controls muted loop></audio>
         <div  class="details">
-            <input for="text" id="myname" value="Enter username" >
-            <input type="submit" id="submit" placeholder="submit" onclick="inpt()">
+            <input type="text" id="myname" value="Enter username" >
+            <button onclick="inpt()" class="onebtn">Submit</button>
+            <button id="score">0</button>
 
         </div>
            <h2 id="nameEl"></h2>
-
-        <div class="question">
-            <p> 1. Which of the following has a P4 connector to provide a 12V output?</p>
-            <uL>
-                <li id="first">SCSI cable</li>
-                <li id="second">24-pin adapter</li>
-                <li id="third">eSATA cable</li>
-                <li id="fourth">EIDE port</li>
-            </uL>
-            <button onclick="rev()" >Reveal Answer</button>
-            <span id="pan"></span>
-        </div>
-
-        <div class="question2">
-            <p> 2. Which of the following technologies can be used for wireless payments?</p>
-            <ul>
-                <li id="opt1" class="opt">IR</li>
-                <li id="opt2" class="opt">NFC</li>
-                <li id="opt3" class="opt">LTE</li>
-                <li id="opt4" class="opt">BLUETOOTH</li>
-            </ul>
-            <button onclick="showAns()">Reveal Answer</button>
-            <span id="wireless"></span>
-        </div>
-
-        <div class="question3">
-            <p> 3.  Which of the following connection types can be used simultaneously for video, storage, and audio?</p>
-           <ul>
-            <li id="one" class="optn">Thunderbolt</li>
-            <li id="two" class="optn"> DisplayPort</li>
-            <li id="three" class="optn">DVI</li>
-            <li id="four" class="optn">HDMI</li>
-           </ul> 
-           <button onclick="showAnswer()">Reveal Answer</button>
-            <span id="connection"></span> 
-        </div>
-    </section>
+    <h1>Quiz Application</h1>
+    <div id="question"></div>
+    <br>
+    <div>
+     
     </div>
-</body>
+     <button id="reveal">Reveal Answer</button>
+  </div>
 
-    <script src="game.js"></script>
-    
+  <script src="./game.js"></script>
 </body>
 </html>
- 
-

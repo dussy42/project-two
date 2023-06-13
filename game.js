@@ -1,31 +1,34 @@
-function rule(){
-    var btn=document.getElementById("toggleBtn");
+let displayContainer = document.getElementById("question");
+const revealButton = document.getElementById("reveal");
+const scoreElement = document.getElementById("score");
 
-    
-    if (btn.value=="ON"){
-    var ul=document.getElementsByTagName("ul");
-    var listItems=document.getElementsByTagName("p");
-   
-    ul.innerText="Game Rules";
-    listItems[0].innerText="Click the start game button";
-    listItems[1].innerText="A score will be rendered onscreen";
-    listItems[2].innerText="Press Hold button to push your score to the score button";
-    listItems[3].innerText="While on hold, the second Player could do the same as in 1 and two";
-    
-    btn.value="OFF"
- }
- else{
-    var ul=document.getElementsByTagName("ul");
-    var listItems=document.getElementsByTagName("p")
-    ul.innerText="Game Rules";
-    listItems[0].innerText="";
-    listItems[1].innerText="";
-    listItems[2].innerText="";
-    listItems[3].innerText="";
-    btn.value="ON"
-    
- }
-};
+
+const quizArray = [
+    {
+    id: "0",
+    question: "Which of the following has a P4 connector to provide a 12V output?",
+    options: ["SCSI cable", "24-pin adapter", "eSATA cable", "EIDE port"],
+    correct: "EIDE port",
+  },
+  {
+    id: "1",
+    question: "Which of the following technologies can be used for wireless payments?",
+    options: ["IR", "NFC", "LTE", "BLUETOOTH"],
+    correct: "NFC",
+  },
+  {
+    id: "2",
+    question: "Which of the following connection types can be used simultaneously for video, storage, and audio?",
+    options: ["Thunderbolt", "DisplayPort", "DVI", "HDMI"],
+    correct: "Thunderbolt",
+  },
+  {
+    id:"3",
+    question: "Which of the following devices performs forwarding decisions based on MAC addresses?",
+    options: ['Repeater','Hub','Router','Switch'],
+    correct: 'Switch'
+  }
+];
 
 /* getting username from input field */
 
@@ -44,174 +47,111 @@ else{
 
 }
 };
+const totalScore = quizArray.length * 10;
+let answeredQuestions = 0;
+let score = 0;
 
+  
+function displayQuizQuestions() {
+  
 
+  // Clear previous contents of the container
+  displayContainer.innerHTML = "";
 
-/* the definition of correct answer for question 1*/
-let boxes=document.getElementsByTagName("li");
-for(let box of boxes){
-    box.addEventListener("click", function onClick(){
-        var rightAns=document.getElementById("fourth")
-        let correct=rightAns;
+  quizArray.forEach((quizItem) => {
+    // Create <p> element for the question
+    const questionElement = document.createElement("p");
+    questionElement.textContent = `${+quizItem.id +1}.${quizItem.question}`;
 
-        //disable other options
-            for(let option of boxes){
-                option.style.pointerEvents="none"
-            }
-            if(correct===firstQues){
-                first()
-            }
-            else if(correct===secondQues){
-                sec()
-            }
-            else if(correct===thirdQues){
-                third()
-            }
-            else{
-                rightAns.innerHTML= "EIDE port" + " correct answer";
-            rightAns.style.backgroundColor="white";
-            }
+    // Append the question to the container
+    displayContainer.appendChild(questionElement);
+
+    // Create buttons for each option
+    quizItem.options.forEach((option) => {
+      const optionButton = document.createElement("button");
+      optionButton.textContent = option;
+
+      // Add event listener to check if the selected option is correct
+      optionButton.addEventListener("click", () => {
+        // Disable all option buttons
+        quizItem.options.forEach((btn) => {
+          const button = document.getElementById(btn);
+          button.disabled = true;
+        });
+
+        if (option === quizItem.correct) {
+          optionButton.style.backgroundColor = "green";
+          optionButton.style.color = "white";
+          score += 10;
+        } else {
+          optionButton.style.backgroundColor = "red";
+          optionButton.style.color = "white";
+        }
+
+        answeredQuestions++;
+
+        // Check if all questions are answered
+        if (answeredQuestions === quizArray.length) {
+          revealButton.disabled = false;
+        }
+      });
+
+      // Set an ID for each option button
+      optionButton.id = option;
+
+      // Append the option button to the container
+      displayContainer.appendChild(optionButton);
     });
+  });
+
+
+  // Disable reveal answers button initially
+  revealButton.disabled = true;
 }
 
-/* declaring option one if clicked */
-let firstQues=document.getElementById("first");
-firstQues.addEventListener("click", function first(){
-firstQues.style.backgroundColor="goldenrod"
+  // Add event listener to reveal answers button
+  revealButton.addEventListener("click", () => {
+    quizArray.forEach((quizItem) => {
+      const correctOptionButton = document.getElementById(quizItem.correct);
+      correctOptionButton.style.backgroundColor = "green";
+      correctOptionButton.style.color = "white";
+    });
 
-});
+    // Update the score element
+    scoreElement.textContent = score.toString() + "/" + totalScore.toString();
+  });
+function rule() {
+  var btn = document.getElementById("toggleBtn");
+  var ul = document.getElementsByTagName("ul")[0];
 
-/* declaring option two if clicked */
-let secondQues=document.getElementById("second");
-secondQues.addEventListener("click", function sec(){
-secondQues.style.backgroundColor="goldenrod"
+  if (btn.value === "ON") {
+    var li1 = document.createElement('li');
+    li1.innerText = "Create a UserName in the input field then click submit";
 
-});
+    var li2 = document.createElement('li');
+    li2.innerText = "Click the options which is the best answer, then the background-color changes to red ";
 
-/* declaring option third if clicked */
-let thirdQues=document.getElementById("third");
-thirdQues.addEventListener("click", function third(){
-thirdQues.style.backgroundColor="goldenrod";
+    var li3 = document.createElement('li');
+    li3.innerText = "The background-color of correct answer will change to white";
 
-});
-
-
-
-
-/* function to reveal answer*/
-function rev(){
-  document.getElementById("pan").textContent= "EIDE port";
-   document.getElementById("pan").style.backgroundColor="white"
-};
-
-
-
-/* javacript codes for the second question */
-
-var oils=document.getElementsByClassName("opt");
-for(let oil of oils){
-    oil.addEventListener("click", function palm(){
-    var bestAns=document.getElementById("opt2");
-    let correctAns=bestAns;
-
-    //disable other options
-    for(let option of oils){
-        option.style.pointerEvents="none";
-    }
-    if(correctAns===quesTwo1){
-       ir()
-    }
+    var li4 = document.createElement('li');
+    li4.innerText = "10points for each right answers will be rendered unto the score screen and zero for each wrong choices";
     
-   else if(correctAns===quesTwo3){
-        lte()
-    }
+    var li5 = document.createElement('li');
+    li5.innerText = "click the reveal button below left down corner to get total score on the score screen";
+    ul.appendChild(li1);
+    ul.appendChild(li2);
+    ul.appendChild(li3);
+    ul.appendChild(li4);
+    ul.appendChild(li5);
 
-  else if(correctAns===quesTwo4){
-          blueTooth()
-   }
-
-   else{
-    bestAns.innerHTML="NFC" + " correct answer";
-    bestAns.style.backgroundColor="white";
-   }
-        
-    });
-
+    btn.value = "OFF";
+  } else {
+    ul.innerHTML = '';
+    btn.value = "ON";
+  }
 }
 
-/* declaring option one in question 2 if clicked */
-var quesTwo1=document.getElementById("opt1");
-quesTwo1.addEventListener("click", function ir(){
-    quesTwo1.style.backgroundColor="goldenrod"
-})
 
-
- /* declaring option 3 in question 2 if clicked */
- var quesTwo3=document.getElementById("opt3");
- quesTwo3.addEventListener("click", function lte(){
-    quesTwo3.style.backgroundColor="goldenrod"
- })
-
- /* declaring option 4 in question 2 if clicked */
- var quesTwo4=document.getElementById("opt4");
- quesTwo4.addEventListener("click", function blueTooth(){
-    quesTwo4.style.backgroundColor="goldenrod"
- });
-
-/*revealing the answers for question2*/
-function showAns(){
-    document.getElementById("wireless").textContent="NFC";
-    document.getElementById("wireless").style.backgroundColor="white";
-};
-
-
-/*third question*/
-var bottles=document.getElementsByClassName("optn");
-for( let bottle of bottles){
-bottle.addEventListener("click", function myCon(){
-var perfectAns=document.getElementById("one");
-var result=perfectAns;
- 
-for( let option of bottles){
-    option.style.pointerEvents="none";
-}
- if(result===questThree2){
-    displayPort()
-
- }
-else if(result===questThree3){
-    dvi()
- }
- else if(result===questThree4){
-    hdmi()
- }
- else{
-  perfectAns.innerHTML="Thunderbolt" + " correct answer"
-  perfectAns.style.backgroundColor="white";
- }
-});
-}
-
-/* declaring option two in question 3 if clicked */
-var questThree2=document.getElementById("two");
-questThree2.addEventListener("click", function displayPort(){
-    questThree2.style.backgroundColor="goldenrod"
-});
-
-/* declaring option three in question 3 if clicked */
-var questThree3=document.getElementById("three");
-questThree3.addEventListener("click", function dvi(){
-    questThree3.style.backgroundColor="goldenrod"
-});
-
-/* declaring option four in question 3 if clicked */
-var questThree4=document.getElementById("four");
-questThree4.addEventListener("click", function hdmi(){
-    questThree4.style.backgroundColor="goldenrod"
-});
-
-/*revealing the answers for question3*/
-function showAnswer(){
-    document.getElementById("connection").textContent="Thunderbolt";
-    document.getElementById("connection").style.backgroundColor="white"
-}
+// Call the function to display the quiz questions
+displayQuizQuestions();
