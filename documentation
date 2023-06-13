@@ -1,0 +1,22 @@
+# project-two
+The comptia a+ review quiz is based on real comptia a+ exam questions and i particularly choose this because of my past experience in preparing for the comptia exam. However, potential user will have a feel of what real exam situation feels like, more like an exam simulation practise.
+![]()
+![]()
+![]()
+## 1 FEATURES <br>
+1 Navigation <br>
+Upon clicking start review button on the Home Page which eventually opens the quiz itself. Therefore, to the top left is the Home button and Rules button(this contains the rules\guidelines for the guiz).
+
+## 2 CONTENTS <br>
+1. To begin with are the form fields which enables the user to enter username and submit respectively. In addition is score field whichmakes the user keeps track of performance interms of right and wrong answers and also an audio to spice the quiz.
+
+2. In addition to the foregoing are the questions with options well laid out in warm colorcontrasting colors. Also included are the reveal buttons below each questions which aids the user to know the right answers. Though a feature was included in the javascript to reveal the right answer option amongst the four choices of every question.
+
+
+## CREDITS <br>
+All the codes were mine with exception to the background images which i sourced from [Unsplash](https://unsplash.com/s/photos/full-screen-wallpaper) and [servicecentrelist](https://servicecentrelist.com/comptia-a-220-1001-certification-questions-answers)
+
+** VALIDATOR TESTING**: <br>
+W3C was used to validate my html while jigsaw was used for css and both turn out to be no error.Be that as it may, i affrirm  upon using lighthouse in devtools that the website is accessibile with legible fonts and well lighted colors
+
+ ![](asset/)
