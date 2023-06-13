@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(/assets/images/nice.avif);
+   
     background-image: linear-gradient(to top left, rgba(81, 88, 133, 0.778) 0%, rgba(131, 81, 133, 0.9) 100%);
  
     /* this is the wrapper for the app*/ 
