@@ -14,7 +14,7 @@ this section provides insight into the UX process, focusing on who the website i
 # Project goals:<br>
 
 To encourage people to take the quiz for them to prepare for the comptia A+ exam(real exam simulation).<br>
-To provide users with immediate feedback(upon clicking any option in any question, the background colors changes to red if its red and blue if the answer is right) . <br>
+To provide users with immediate feedback(upon clicking any option in any question, the background colors changes to red if the option clicked is wrong and blue if the answer is right) . <br>
 ![options](/assets/images/options.png)
 In addition, to this is the reveal button below left hand corner which alows the user to finish the game and get score evalauation on the scoreboard screen beside the submit button at the top.
 ![rev](/assets/images/revealButton.png)
