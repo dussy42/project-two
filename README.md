@@ -1,8 +1,5 @@
 # project-two
 The comptia a+ review quiz is based on real comptia a+ exam questions and i particularly choose this because of my past experience in preparing for the comptia exam. However, potential user will have a feel of what real exam situation feels like, more like an exam simulation practise.
-![home1440px](documentation/home1440px.png)
-![home768px](documentation/home768px.png)
-![home425px](documentation/home425px.png)
 ![Screenshot1440px](documentation/Screenshot1440px.png)
 ![Screenshot768px](documentation/Screenshot768px.png)
 ![Screenshot425px](documentation/Screenshot425px.png)
