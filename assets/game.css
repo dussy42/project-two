@@ -21,23 +21,6 @@ body{
     margin-top: 55px;
 }
 
-   a{
-    justify-content: center;
-    margin-left: 30px;
-    padding: 16px;
-    background-color:greenyellow;
-    text-decoration: none;
-    border-radius: 2px;
-    
-
-   }
-
-   a:hover{
-    transition-duration: 4s;
-    color: #6B5B95;
-    background-color: brown;
-  
-   }
 
   .links button{
   
