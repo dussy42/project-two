@@ -1,8 +1,8 @@
 # project-two
 The comptia a+ review quiz was based on real comptia a+ exam questions and i particularly choose this because of my past experience in preparing for the comptia exam. However, potential user will have a feel of what real exam situation feels like, more like an exam simulation practise.
-![Screenshot1440px](documentation/Screen1024px.png)
-![Screenshot768px](documentation/Screen768px.png)
-![Screenshot425px](documentation/Screen425px.png)
+![Screenshot1440px](documentation/screen1024px.png)
+![Screenshot768px](documentation/screen768px.png)
+![Screenshot425px](documentation/screen425px.png)
 
 # User Experience (UX)
 Key information for the site
