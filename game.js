@@ -36,17 +36,23 @@ function inpt(){
     var inputEl=document.getElementById("myname");
     var defaultVal=inputEl.defaultValue;
      var currentVal=inputEl.value;
+    
 
-   if (defaultVal==currentVal){
-   document.getElementById("nameEl").innerHTML=" Continue as a guest";
+   if (defaultVal==currentVal){o
+    alert("pls enter a username")
+    return false
 }
 else{
     document.getElementById("nameEl").innerHTML= "Welcome " + currentVal;
     document.getElementById("nameEl").style.color="white";
     document.getElementById("nameEl").className="names"
+    document.getElementById("myname").value=""
 
 }
 };
+
+
+
 const totalScore = quizArray.length * 10;
 let answeredQuestions = 0;
 let score = 0;
@@ -138,7 +144,7 @@ function rule() {
     li4.innerText = "10points for each right answers will be rendered unto the score screen and zero for each wrong choices";
     
     var li5 = document.createElement('li');
-    li5.innerText = "click the reveal button below left down corner to get total score on the score screen";
+    li5.innerText = "click the submit button to get total score on the score screen above";
     ul.appendChild(li1);
     ul.appendChild(li2);
     ul.appendChild(li3);
