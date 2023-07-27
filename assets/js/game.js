@@ -35,7 +35,7 @@ const quizArray = [
 function inpt(){
     var inputEl=document.getElementById("myname");
     var defaultVal=inputEl.defaultValue;
-     var currentVal=inputEl.value;
+    var currentVal=inputEl.value;
     
 
    if (defaultVal==currentVal){
