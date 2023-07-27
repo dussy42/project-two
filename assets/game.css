@@ -1,316 +1,286 @@
 *,
 **::before,
-**::after{
-    box-sizing: border-box;
-    padding: 0;
-    margin:0;
+**::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-   background-color: #1A1A1D; 
-    /* this is the wrapper for the app*/ 
+body {
+  background-color: #1a1a1d;
+  /* this is the wrapper for the app*/
 }
-#quiz-container{
-    width: 100%;
-}
-
-.links{
-    justify-content: space-around;
-    margin-top: 55px;
+#quiz-container {
+  width: 100%;
 }
 
-#option{
-    margin-left: 400px;
+.links {
+  justify-content: space-around;
+  margin-top: 55px;
 }
 
-ul{
-    color: azure;
+#option {
+  margin-left: 400px;
 }
 
-  .links button{
-  
-    justify-content: center;
-    margin-left: 30px;
-    padding: 16px;
-    color: whitesmoke;
-    background-color:#022140;
-    border-radius: 2px;
+ul {
+  color: azure;
+}
+
+.links button {
+  justify-content: center;
+  margin-left: 30px;
+  padding: 16px;
+  color: whitesmoke;
+  background-color: #022140;
+  border-radius: 2px;
 }
 /*styling the inputfield */
 
-input{
-    margin-top: 12px;
-    width: 12%;
-    height:4vh;
-    padding-left: 15px; 
-    margin-left: 7px;
+input {
+  margin-top: 12px;
+  width: 12%;
+  height: 4vh;
+  padding-left: 15px;
+  margin-left: 7px;
 }
 
 /*styling the audio */
-audio{
-    display: flex;
-    float: right;
-    margin-right: 195px;
-    width: 15%;
-    padding-top: 10px;
-    margin-top: 30px;
-    color: #6B5B95;
-    
+audio {
+  display: flex;
+  float: right;
+  margin-right: 195px;
+  width: 15%;
+  padding-top: 10px;
+  margin-top: 30px;
+  color: #6b5b95;
 }
 
-audio:hover{
-    background-color: #6B5B95;
+audio:hover {
+  background-color: #6b5b95;
 }
-.details{
-    background-color: #022140;
+.details {
+  background-color: #022140;
 }
 
-.details .onebtn{
-    height: 4vh;
-    width: 15%;
+.details .onebtn {
+  height: 4vh;
+  width: 15%;
 }
 /*styling the scoreboard */
-.details #score{
-    background-color: azure;
-    color: black;
-    margin-left: 100px;
-    height: 7vh;
-    width: 15%;
-    border-radius: 50%;
+.details #score {
+  background-color: azure;
+  color: black;
+  margin-left: 100px;
+  height: 7vh;
+  width: 15%;
+  border-radius: 50%;
 }
 
-h1{
-    color: whitesmoke;
-    font-weight: bolder;
+h1 {
+  color: whitesmoke;
+  font-weight: bolder;
 }
-.names{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: oblique;
-    background-color: #022140;
-    opacity: 1;
-    padding-left: 12px;
+.names {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: oblique;
+  background-color: #022140;
+  opacity: 1;
+  padding-left: 12px;
 }
 
 /*styling the main body of the app which contains the questions*/
 
 #question {
-    margin-top: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:#022140;
-    color: beige;
-    margin-left: 12%;
-    padding-left: 150px;
-    font-weight: bolder;
-    padding-top: 90px;
-    border-radius: 9px;
-    margin-right: 12%;
-    height: 200vh;
-   
+  margin-top: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #022140;
+  color: beige;
+  margin-left: 12%;
+  padding-left: 150px;
+  font-weight: bolder;
+  padding-top: 90px;
+  border-radius: 9px;
+  margin-right: 12%;
+  height: 200vh;
 }
 
-#question button:hover:nth-child(2n+1){
-    background-color: rgba(0, 0, 255, 0.312);
+#question button:hover:nth-child(2n + 1) {
+  background-color: rgba(0, 0, 255, 0.312);
 }
-
 
 #question button {
-    display: block;
-    font-size: large;
-    font-weight: bold;
-    color: black;
-    margin-bottom:10px;
-    width:50%;
-    height: 7vh;
-    border-radius: 7px;
-    background-color:#cccccc;
-    margin-top: 17px;
-    margin-left: 40px;
-  }
+  display: block;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  width: 50%;
+  height: 7vh;
+  border-radius: 7px;
+  background-color: #cccccc;
+  margin-top: 17px;
+  margin-left: 40px;
+}
 
-  /*styling the reveal buttob below the left hand corner */
+/*styling the reveal buttob below the left hand corner */
 
-#reveal{
-    background-color:white;
-    color: black;
-    font-weight: bold;
-    margin-left:38%;
-    height:5vh ;
-    width:200px ;
+#reveal {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  margin-left: 38%;
+  height: 5vh;
+  width: 200px;
 }
 /* added media queries */
-@media only screen and ( max-width:927px){
-    #question{
-        height: 200vh;
-    }
-    audio{
-       margin-right: 122px;
-    }
+@media only screen and (max-width: 927px) {
+  #question {
+    height: 200vh;
+  }
+  audio {
+    margin-right: 122px;
+  }
 }
 
+@media only screen and (max-width: 833px) {
+  #question {
+    height: 207vh;
+    padding-left: 38px;
+  }
 
+  #question button {
+    width: 69%;
+  }
 
- @media only screen and ( max-width:833px){
-    #question{
-        height: 207vh;
-        padding-left: 38px;
-    }
-
-    #question button {
-        width: 69%;
-    }
-
-    audio{
-        margin-top:54px; 
-    }
- }
-
- @media only screen and ( max-width:753px){
-    #question{
-       height: 250vh;
-    }
-
-    audio{
-        margin-right: 126px; 
-    }
-    input {
-      
-        width: 20%;
-       
-    }
+  audio {
+    margin-top: 54px;
+  }
 }
 
-@media only screen and ( max-width:684px){
-    #reveal{
-    
-        margin-left:37%;
+@media only screen and (max-width: 753px) {
+  #question {
+    height: 250vh;
+  }
 
-    }
-   
+  audio {
+    margin-right: 126px;
+  }
+  input {
+    width: 20%;
+  }
 }
 
- @media only screen and ( max-width:696px){
-    #question{
-       height: 220vh;
-    }
-
-    audio{
-        margin-right: 106px; 
-    }
+@media only screen and (max-width: 684px) {
+  #reveal {
+    margin-left: 37%;
+  }
 }
 
+@media only screen and (max-width: 696px) {
+  #question {
+    height: 220vh;
+  }
 
-@media only screen and ( max-width:633px){
-    #question{
-       height: 210vh;
-    }
-
-    audio{
-        margin-right: 88px; 
-    }
-}
-@media only screen and ( max-width:586px){
-    #reveal{
-        margin-left:34%;
-    }
+  audio {
+    margin-right: 106px;
+  }
 }
 
-@media only screen and ( max-width:527px){
-    #reveal{
-        margin-left:30%;
-        height:4vh ;
-        width:170px ;
-        };
-    }
+@media only screen and (max-width: 633px) {
+  #question {
+    height: 210vh;
+  }
 
-
-@media only screen and ( max-width:516px){
-    #question{
-       height: 220vh;
-    }
-
-    audio{
-        margin-right:84px; 
-    }
-    input {
-      
-        width: 23%;
-       
-    }
+  audio {
+    margin-right: 88px;
+  }
 }
-@media only screen and ( max-width:410px){
-    #question{
-       height: 230vh;
-    }
-
-    audio{
-        margin-right: 76px; 
-    }
-    input {
-      
-        width: 28%;
-       
-    }
-
-    #question button {
-        margin-left: 27px;
-    }
-
-    #reveal{
-        margin-left:28%;
-        height:4vh ;
-        width:160px ;
-        };
-    }
-
-
-
-
-@media only screen and ( max-width:340px){
-    #question{
-       height: 240vh;
-    }
-    input {
-      
-        width: 29%;
-       
-    }
-    .details .onebtn {
-
-        width: 19%;
-    }
-
-    .details #score {
-        background-color: azure;
-        
-        margin-left: 53px;
-       
-    }
-
-    audio{
-        margin-right: 48px; 
-    }
+@media only screen and (max-width: 586px) {
+  #reveal {
+    margin-left: 34%;
+  }
 }
 
-@media only screen and ( max-width:326px){
-    #question button {
-        margin-left: 11px;
-        width:75%;
-    }
-    #reveal{
-        margin-left:25%;
-        height:4vh ;
-        width:150px ;
-        };
+@media only screen and (max-width: 527px) {
+  #reveal {
+    margin-left: 30%;
+    height: 4vh;
+    width: 170px;
+  }
 }
 
-@media only screen and ( max-width:279px){
-    #question{
-       height: 260vh;
-    }
+@media only screen and (max-width: 516px) {
+  #question {
+    height: 220vh;
+  }
 
-    
+  audio {
+    margin-right: 84px;
+  }
+  input {
+    width: 23%;
+  }
+}
+@media only screen and (max-width: 410px) {
+  #question {
+    height: 230vh;
+  }
+
+  audio {
+    margin-right: 76px;
+  }
+  input {
+    width: 28%;
+  }
+
+  #question button {
+    margin-left: 27px;
+  }
+
+  #reveal {
+    margin-left: 28%;
+    height: 4vh;
+    width: 160px;
+  }
 }
 
+@media only screen and (max-width: 340px) {
+  #question {
+    height: 240vh;
+  }
+  input {
+    width: 29%;
+  }
+  .details .onebtn {
+    width: 19%;
+  }
 
+  .details #score {
+    background-color: azure;
 
+    margin-left: 53px;
+  }
 
+  audio {
+    margin-right: 48px;
+  }
+}
+
+@media only screen and (max-width: 326px) {
+  #question button {
+    margin-left: 11px;
+    width: 75%;
+  }
+  #reveal {
+    margin-left: 25%;
+    height: 4vh;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 279px) {
+  #question {
+    height: 260vh;
+  }
+}
