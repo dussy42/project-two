@@ -7,7 +7,7 @@ The [comptia A](https://dussy42.github.io/project-two/) quiz was based on real c
 # User Experience (UX)
 Key information for the site
 this section provides insight into the UX process, focusing on who the website is for, the main aims of the project and how the website can help users meet their needs.
-[wireframe](/documentation/wireframe.png)
+![wireframe](documentation/wireframe.png)
 
 # Project goals:<br>
 
