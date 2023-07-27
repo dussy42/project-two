@@ -13,8 +13,9 @@ this section provides insight into the UX process, focusing on who the website i
 To encourage people to take the quiz and prepare them for the comptia A+ exam(real exam simulation).<br>
 To provide users with immediate feedback(upon clicking any option in any question, the background colors changes to red if its red and green if the answer is right) . <br>
 ![options](/documentation/options.png)
-In addition, to this is the submit button(below the question page )  which alows the user to finish the game and get score evalauation on the scoreboard screen beside the username submit button at the top.
-![submit](/documentation/submit.png)
+In addition, to this is the submit button(below the question page ) ![submit](/documentation/submit.png)  which allows the user to finish the game and get score evalauation on the scoreboard screen beside the username submit button at the top.
+
+![scoreboard](/documentation/nav.png)
 
 ## 1 FEATURES <br>
 1 Navigation <br>
