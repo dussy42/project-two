@@ -38,7 +38,7 @@ function inpt(){
      var currentVal=inputEl.value;
     
 
-   if (defaultVal==currentVal){o
+   if (defaultVal==currentVal){
     alert("pls enter a username")
     return false
 }
